@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* TiAdjustModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiAdjustModule.h */; };
+		24DD6CFA1134B3F500162E58 /* TiAdjustModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiAdjustModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		24DE9E1111C5FE74003F90F6 /* TiAdjustModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiAdjustModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* TiAdjustModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiAdjustModuleAssets.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		438CDDE91B3A09E7003A9B6A /* ADJActivityHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD851B39F359003A9B6A /* ADJActivityHandler.m */; };
+		438CDDEA1B3A09E7003A9B6A /* ADJActivityKind.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD871B39F359003A9B6A /* ADJActivityKind.m */; };
+		438CDDEB1B3A09E7003A9B6A /* ADJActivityPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD891B39F359003A9B6A /* ADJActivityPackage.m */; };
+		438CDDEC1B3A09E7003A9B6A /* ADJActivityState.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD8B1B39F359003A9B6A /* ADJActivityState.m */; };
+		438CDDED1B3A09E7003A9B6A /* NSData+ADJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD8E1B39F359003A9B6A /* NSData+ADJAdditions.m */; };
+		438CDDEE1B3A09E7003A9B6A /* NSString+ADJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD901B39F359003A9B6A /* NSString+ADJAdditions.m */; };
+		438CDDEF1B3A09E7003A9B6A /* UIDevice+ADJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD921B39F359003A9B6A /* UIDevice+ADJAdditions.m */; };
+		438CDDF01B3A09E7003A9B6A /* ADJAdjustFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD941B39F359003A9B6A /* ADJAdjustFactory.m */; };
+		438CDDF11B3A09E7003A9B6A /* ADJAttribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD961B39F359003A9B6A /* ADJAttribution.m */; };
+		438CDDF21B3A09E7003A9B6A /* ADJAttributionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD981B39F359003A9B6A /* ADJAttributionHandler.m */; };
+		438CDDF31B3A09E7003A9B6A /* ADJConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD9A1B39F359003A9B6A /* ADJConfig.m */; };
+		438CDDF41B3A09E7003A9B6A /* ADJDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD9C1B39F359003A9B6A /* ADJDeviceInfo.m */; };
+		438CDDF51B3A09E7003A9B6A /* ADJEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDD9E1B39F359003A9B6A /* ADJEvent.m */; };
+		438CDDF61B3A09E7003A9B6A /* ADJLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDA01B39F359003A9B6A /* ADJLogger.m */; };
+		438CDDF71B3A09E7003A9B6A /* ADJPackageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDA21B39F359003A9B6A /* ADJPackageBuilder.m */; };
+		438CDDF81B3A09E7003A9B6A /* ADJPackageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDA41B39F359003A9B6A /* ADJPackageHandler.m */; };
+		438CDDF91B3A09E7003A9B6A /* ADJRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDA61B39F359003A9B6A /* ADJRequestHandler.m */; };
+		438CDDFA1B3A09E7003A9B6A /* ADJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDA81B39F359003A9B6A /* ADJTimer.m */; };
+		438CDDFB1B3A09E7003A9B6A /* Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDAA1B39F359003A9B6A /* Adjust.m */; };
+		438CDDFC1B3A09E7003A9B6A /* ADJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CDDAC1B39F359003A9B6A /* ADJUtil.m */; };
+		438CDDFD1B3A09ED003A9B6A /* ADJActivityHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD841B39F359003A9B6A /* ADJActivityHandler.h */; };
+		438CDDFE1B3A09ED003A9B6A /* ADJActivityKind.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD861B39F359003A9B6A /* ADJActivityKind.h */; };
+		438CDDFF1B3A09ED003A9B6A /* ADJActivityPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD881B39F359003A9B6A /* ADJActivityPackage.h */; };
+		438CDE001B3A09ED003A9B6A /* ADJActivityState.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD8A1B39F359003A9B6A /* ADJActivityState.h */; };
+		438CDE011B3A09EE003A9B6A /* NSData+ADJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD8D1B39F359003A9B6A /* NSData+ADJAdditions.h */; };
+		438CDE021B3A09EE003A9B6A /* NSString+ADJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD8F1B39F359003A9B6A /* NSString+ADJAdditions.h */; };
+		438CDE031B3A09EE003A9B6A /* UIDevice+ADJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD911B39F359003A9B6A /* UIDevice+ADJAdditions.h */; };
+		438CDE041B3A09EE003A9B6A /* ADJAdjustFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD931B39F359003A9B6A /* ADJAdjustFactory.h */; };
+		438CDE051B3A09EE003A9B6A /* ADJAttribution.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD951B39F359003A9B6A /* ADJAttribution.h */; };
+		438CDE061B3A09EE003A9B6A /* ADJAttributionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD971B39F359003A9B6A /* ADJAttributionHandler.h */; };
+		438CDE071B3A09EE003A9B6A /* ADJConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD991B39F359003A9B6A /* ADJConfig.h */; };
+		438CDE081B3A09EE003A9B6A /* ADJDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD9B1B39F359003A9B6A /* ADJDeviceInfo.h */; };
+		438CDE091B3A09EE003A9B6A /* ADJEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD9D1B39F359003A9B6A /* ADJEvent.h */; };
+		438CDE0A1B3A09EE003A9B6A /* ADJLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDD9F1B39F359003A9B6A /* ADJLogger.h */; };
+		438CDE0B1B3A09EE003A9B6A /* ADJPackageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDDA11B39F359003A9B6A /* ADJPackageBuilder.h */; };
+		438CDE0C1B3A09EE003A9B6A /* ADJPackageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDDA31B39F359003A9B6A /* ADJPackageHandler.h */; };
+		438CDE0D1B3A09EE003A9B6A /* ADJRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDDA51B39F359003A9B6A /* ADJRequestHandler.h */; };
+		438CDE0E1B3A09EE003A9B6A /* ADJTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDDA71B39F359003A9B6A /* ADJTimer.h */; };
+		438CDE0F1B3A09EE003A9B6A /* Adjust.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDDA91B39F359003A9B6A /* Adjust.h */; };
+		438CDE101B3A09EE003A9B6A /* ADJUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 438CDDAB1B39F359003A9B6A /* ADJUtil.h */; };
+		AA747D9F0F9514B9006C5449 /* TiAdjust_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiAdjust_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = adjust;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* TiAdjustModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdjustModule.h; path = Classes/TiAdjustModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* TiAdjustModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdjustModule.m; path = Classes/TiAdjustModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* TiAdjustModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdjustModuleAssets.h; path = Classes/TiAdjustModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* TiAdjustModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdjustModuleAssets.m; path = Classes/TiAdjustModuleAssets.m; sourceTree = "<group>"; };
+		438CDD841B39F359003A9B6A /* ADJActivityHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJActivityHandler.h; sourceTree = "<group>"; };
+		438CDD851B39F359003A9B6A /* ADJActivityHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJActivityHandler.m; sourceTree = "<group>"; };
+		438CDD861B39F359003A9B6A /* ADJActivityKind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJActivityKind.h; sourceTree = "<group>"; };
+		438CDD871B39F359003A9B6A /* ADJActivityKind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJActivityKind.m; sourceTree = "<group>"; };
+		438CDD881B39F359003A9B6A /* ADJActivityPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJActivityPackage.h; sourceTree = "<group>"; };
+		438CDD891B39F359003A9B6A /* ADJActivityPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJActivityPackage.m; sourceTree = "<group>"; };
+		438CDD8A1B39F359003A9B6A /* ADJActivityState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJActivityState.h; sourceTree = "<group>"; };
+		438CDD8B1B39F359003A9B6A /* ADJActivityState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJActivityState.m; sourceTree = "<group>"; };
+		438CDD8D1B39F359003A9B6A /* NSData+ADJAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ADJAdditions.h"; sourceTree = "<group>"; };
+		438CDD8E1B39F359003A9B6A /* NSData+ADJAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ADJAdditions.m"; sourceTree = "<group>"; };
+		438CDD8F1B39F359003A9B6A /* NSString+ADJAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ADJAdditions.h"; sourceTree = "<group>"; };
+		438CDD901B39F359003A9B6A /* NSString+ADJAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ADJAdditions.m"; sourceTree = "<group>"; };
+		438CDD911B39F359003A9B6A /* UIDevice+ADJAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ADJAdditions.h"; sourceTree = "<group>"; };
+		438CDD921B39F359003A9B6A /* UIDevice+ADJAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ADJAdditions.m"; sourceTree = "<group>"; };
+		438CDD931B39F359003A9B6A /* ADJAdjustFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJAdjustFactory.h; sourceTree = "<group>"; };
+		438CDD941B39F359003A9B6A /* ADJAdjustFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJAdjustFactory.m; sourceTree = "<group>"; };
+		438CDD951B39F359003A9B6A /* ADJAttribution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJAttribution.h; sourceTree = "<group>"; };
+		438CDD961B39F359003A9B6A /* ADJAttribution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJAttribution.m; sourceTree = "<group>"; };
+		438CDD971B39F359003A9B6A /* ADJAttributionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJAttributionHandler.h; sourceTree = "<group>"; };
+		438CDD981B39F359003A9B6A /* ADJAttributionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJAttributionHandler.m; sourceTree = "<group>"; };
+		438CDD991B39F359003A9B6A /* ADJConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJConfig.h; sourceTree = "<group>"; };
+		438CDD9A1B39F359003A9B6A /* ADJConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJConfig.m; sourceTree = "<group>"; };
+		438CDD9B1B39F359003A9B6A /* ADJDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJDeviceInfo.h; sourceTree = "<group>"; };
+		438CDD9C1B39F359003A9B6A /* ADJDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJDeviceInfo.m; sourceTree = "<group>"; };
+		438CDD9D1B39F359003A9B6A /* ADJEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJEvent.h; sourceTree = "<group>"; };
+		438CDD9E1B39F359003A9B6A /* ADJEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJEvent.m; sourceTree = "<group>"; };
+		438CDD9F1B39F359003A9B6A /* ADJLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJLogger.h; sourceTree = "<group>"; };
+		438CDDA01B39F359003A9B6A /* ADJLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJLogger.m; sourceTree = "<group>"; };
+		438CDDA11B39F359003A9B6A /* ADJPackageBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJPackageBuilder.h; sourceTree = "<group>"; };
+		438CDDA21B39F359003A9B6A /* ADJPackageBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJPackageBuilder.m; sourceTree = "<group>"; };
+		438CDDA31B39F359003A9B6A /* ADJPackageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJPackageHandler.h; sourceTree = "<group>"; };
+		438CDDA41B39F359003A9B6A /* ADJPackageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJPackageHandler.m; sourceTree = "<group>"; };
+		438CDDA51B39F359003A9B6A /* ADJRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJRequestHandler.h; sourceTree = "<group>"; };
+		438CDDA61B39F359003A9B6A /* ADJRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJRequestHandler.m; sourceTree = "<group>"; };
+		438CDDA71B39F359003A9B6A /* ADJTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJTimer.h; sourceTree = "<group>"; };
+		438CDDA81B39F359003A9B6A /* ADJTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJTimer.m; sourceTree = "<group>"; };
+		438CDDA91B39F359003A9B6A /* Adjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adjust.h; sourceTree = "<group>"; };
+		438CDDAA1B39F359003A9B6A /* Adjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adjust.m; sourceTree = "<group>"; };
+		438CDDAB1B39F359003A9B6A /* ADJUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADJUtil.h; sourceTree = "<group>"; };
+		438CDDAC1B39F359003A9B6A /* ADJUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADJUtil.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* TiAdjust_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiAdjust_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libTiAdjust.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiAdjust.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libTiAdjust.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* adjust */ = {
+			isa = PBXGroup;
+			children = (
+				438CDD831B39F359003A9B6A /* Adjust */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = adjust;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DE9E0F11C5FE74003F90F6 /* TiAdjustModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* TiAdjustModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* TiAdjustModule.h */,
+				24DD6CF81134B3F500162E58 /* TiAdjustModule.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* TiAdjust_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		438CDD831B39F359003A9B6A /* Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				438CDD841B39F359003A9B6A /* ADJActivityHandler.h */,
+				438CDD851B39F359003A9B6A /* ADJActivityHandler.m */,
+				438CDD861B39F359003A9B6A /* ADJActivityKind.h */,
+				438CDD871B39F359003A9B6A /* ADJActivityKind.m */,
+				438CDD881B39F359003A9B6A /* ADJActivityPackage.h */,
+				438CDD891B39F359003A9B6A /* ADJActivityPackage.m */,
+				438CDD8A1B39F359003A9B6A /* ADJActivityState.h */,
+				438CDD8B1B39F359003A9B6A /* ADJActivityState.m */,
+				438CDD8C1B39F359003A9B6A /* ADJAdditions */,
+				438CDD931B39F359003A9B6A /* ADJAdjustFactory.h */,
+				438CDD941B39F359003A9B6A /* ADJAdjustFactory.m */,
+				438CDD951B39F359003A9B6A /* ADJAttribution.h */,
+				438CDD961B39F359003A9B6A /* ADJAttribution.m */,
+				438CDD971B39F359003A9B6A /* ADJAttributionHandler.h */,
+				438CDD981B39F359003A9B6A /* ADJAttributionHandler.m */,
+				438CDD991B39F359003A9B6A /* ADJConfig.h */,
+				438CDD9A1B39F359003A9B6A /* ADJConfig.m */,
+				438CDD9B1B39F359003A9B6A /* ADJDeviceInfo.h */,
+				438CDD9C1B39F359003A9B6A /* ADJDeviceInfo.m */,
+				438CDD9D1B39F359003A9B6A /* ADJEvent.h */,
+				438CDD9E1B39F359003A9B6A /* ADJEvent.m */,
+				438CDD9F1B39F359003A9B6A /* ADJLogger.h */,
+				438CDDA01B39F359003A9B6A /* ADJLogger.m */,
+				438CDDA11B39F359003A9B6A /* ADJPackageBuilder.h */,
+				438CDDA21B39F359003A9B6A /* ADJPackageBuilder.m */,
+				438CDDA31B39F359003A9B6A /* ADJPackageHandler.h */,
+				438CDDA41B39F359003A9B6A /* ADJPackageHandler.m */,
+				438CDDA51B39F359003A9B6A /* ADJRequestHandler.h */,
+				438CDDA61B39F359003A9B6A /* ADJRequestHandler.m */,
+				438CDDA71B39F359003A9B6A /* ADJTimer.h */,
+				438CDDA81B39F359003A9B6A /* ADJTimer.m */,
+				438CDDA91B39F359003A9B6A /* Adjust.h */,
+				438CDDAA1B39F359003A9B6A /* Adjust.m */,
+				438CDDAB1B39F359003A9B6A /* ADJUtil.h */,
+				438CDDAC1B39F359003A9B6A /* ADJUtil.m */,
+			);
+			name = Adjust;
+			path = Classes/Adjust;
+			sourceTree = "<group>";
+		};
+		438CDD8C1B39F359003A9B6A /* ADJAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				438CDD8D1B39F359003A9B6A /* NSData+ADJAdditions.h */,
+				438CDD8E1B39F359003A9B6A /* NSData+ADJAdditions.m */,
+				438CDD8F1B39F359003A9B6A /* NSString+ADJAdditions.h */,
+				438CDD901B39F359003A9B6A /* NSString+ADJAdditions.m */,
+				438CDD911B39F359003A9B6A /* UIDevice+ADJAdditions.h */,
+				438CDD921B39F359003A9B6A /* UIDevice+ADJAdditions.m */,
+			);
+			path = ADJAdditions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438CDDFD1B3A09ED003A9B6A /* ADJActivityHandler.h in Headers */,
+				438CDDFE1B3A09ED003A9B6A /* ADJActivityKind.h in Headers */,
+				438CDDFF1B3A09ED003A9B6A /* ADJActivityPackage.h in Headers */,
+				438CDE001B3A09ED003A9B6A /* ADJActivityState.h in Headers */,
+				438CDE011B3A09EE003A9B6A /* NSData+ADJAdditions.h in Headers */,
+				438CDE021B3A09EE003A9B6A /* NSString+ADJAdditions.h in Headers */,
+				438CDE031B3A09EE003A9B6A /* UIDevice+ADJAdditions.h in Headers */,
+				438CDE041B3A09EE003A9B6A /* ADJAdjustFactory.h in Headers */,
+				438CDE051B3A09EE003A9B6A /* ADJAttribution.h in Headers */,
+				438CDE061B3A09EE003A9B6A /* ADJAttributionHandler.h in Headers */,
+				438CDE071B3A09EE003A9B6A /* ADJConfig.h in Headers */,
+				438CDE081B3A09EE003A9B6A /* ADJDeviceInfo.h in Headers */,
+				438CDE091B3A09EE003A9B6A /* ADJEvent.h in Headers */,
+				438CDE0A1B3A09EE003A9B6A /* ADJLogger.h in Headers */,
+				438CDE0B1B3A09EE003A9B6A /* ADJPackageBuilder.h in Headers */,
+				438CDE0C1B3A09EE003A9B6A /* ADJPackageHandler.h in Headers */,
+				438CDE0D1B3A09EE003A9B6A /* ADJRequestHandler.h in Headers */,
+				438CDE0E1B3A09EE003A9B6A /* ADJTimer.h in Headers */,
+				438CDE0F1B3A09EE003A9B6A /* Adjust.h in Headers */,
+				438CDE101B3A09EE003A9B6A /* ADJUtil.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* TiAdjust_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* TiAdjustModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* TiAdjustModuleAssets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* adjust */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "adjust" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = adjust;
+			productName = adjust;
+			productReference = D2AAC07E0554694100DB518D /* libTiAdjust.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "adjust" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* adjust */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* adjust */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438CDDE91B3A09E7003A9B6A /* ADJActivityHandler.m in Sources */,
+				438CDDEA1B3A09E7003A9B6A /* ADJActivityKind.m in Sources */,
+				438CDDEB1B3A09E7003A9B6A /* ADJActivityPackage.m in Sources */,
+				438CDDEC1B3A09E7003A9B6A /* ADJActivityState.m in Sources */,
+				438CDDED1B3A09E7003A9B6A /* NSData+ADJAdditions.m in Sources */,
+				438CDDEE1B3A09E7003A9B6A /* NSString+ADJAdditions.m in Sources */,
+				438CDDEF1B3A09E7003A9B6A /* UIDevice+ADJAdditions.m in Sources */,
+				438CDDF01B3A09E7003A9B6A /* ADJAdjustFactory.m in Sources */,
+				438CDDF11B3A09E7003A9B6A /* ADJAttribution.m in Sources */,
+				438CDDF21B3A09E7003A9B6A /* ADJAttributionHandler.m in Sources */,
+				438CDDF31B3A09E7003A9B6A /* ADJConfig.m in Sources */,
+				438CDDF41B3A09E7003A9B6A /* ADJDeviceInfo.m in Sources */,
+				438CDDF51B3A09E7003A9B6A /* ADJEvent.m in Sources */,
+				438CDDF61B3A09E7003A9B6A /* ADJLogger.m in Sources */,
+				438CDDF71B3A09E7003A9B6A /* ADJPackageBuilder.m in Sources */,
+				438CDDF81B3A09E7003A9B6A /* ADJPackageHandler.m in Sources */,
+				438CDDF91B3A09E7003A9B6A /* ADJRequestHandler.m in Sources */,
+				438CDDFA1B3A09E7003A9B6A /* ADJTimer.m in Sources */,
+				438CDDFB1B3A09E7003A9B6A /* Adjust.m in Sources */,
+				438CDDFC1B3A09E7003A9B6A /* ADJUtil.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* TiAdjustModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* TiAdjustModuleAssets.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* adjust */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiAdjust.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiAdjust_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiAdjust;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/TiAdjust.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiAdjust_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiAdjust;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiAdjust.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiAdjust_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiAdjust;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/TiAdjust.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiAdjust_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiAdjust;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "adjust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "adjust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

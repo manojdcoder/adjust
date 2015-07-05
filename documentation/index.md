@@ -8,21 +8,17 @@ https://www.adjust.com/attribution/ for iOS
 
 To access this module from JavaScript, you would do the following:
 
-    ```
     	var Adjust = require("ti.adjust");
-    ```
 
 ## Methods
 
 ### init
 
-	```
 	Adjust.init({
 		key : "API_KEY",
 		environment : Adjust.ENVIRONMENT_SANDBOX,
 		logLevel : Adjust.LOG_LEVEL_VERBOSE
 	}); 
-	```
 
 ## CONSTANTS
 

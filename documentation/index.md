@@ -20,6 +20,12 @@ To access this module from JavaScript, you would do the following:
 		logLevel : Adjust.LOG_LEVEL_VERBOSE
 	}); 
 
+### trackEvent
+
+	Adjust.trackEvent("EVENT_TOKEN", {
+		key : "value"
+	}); 
+
 ## CONSTANTS
 
 	ENVIRONMENT_SANDBOX

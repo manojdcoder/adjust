@@ -76,6 +76,23 @@
     [Adjust appDidLaunch:adjustConfig];
 }
 
+-(void)trackEvent:(id)args
+{
+    ENSURE_ARG_COUNT(args, 1);
+    NSString *token = nil;
+    ENSURE_ARG_AT_INDEX(token, args, 0, NSString);
+    ADJEvent *event = [ADJEvent eventWithEventToken:token];
+    if([args count] > 1)
+    {
+        NSDictionary *dictionary = [args objectAtIndex:1];
+        for(id key in dictionary)
+        {
+            [event addCallbackParameter:key value:[dictionary objectForKey:key]];
+        }
+    }
+    [Adjust trackEvent:event];
+}
+
 MAKE_SYSTEM_STR(ENVIRONMENT_SANDBOX,ADJEnvironmentSandbox);
 MAKE_SYSTEM_STR(ENVIRONMENT_PRODUCTION,ADJEnvironmentProduction);
 MAKE_SYSTEM_PROP(LOG_LEVEL_VERBOSE,ADJLogLevelVerbose);
